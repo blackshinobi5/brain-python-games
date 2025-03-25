@@ -27,7 +27,7 @@
 ### Установка
 
 git clone https://github.com/blackshinobi5/brain-python-games.git
-cd brain-python-games
+cd brain-python-games/brain-python-games
 pip install -e .
 
 ### Запуск
