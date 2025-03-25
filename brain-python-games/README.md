@@ -1,6 +1,6 @@
 # Brain Games
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/22dd2837ef0c911e6562)](https://codeclimate.com/github/blackshinobi5/brain-python-games)  
+[![Maintainability](https://api.codeclimate.com/v1/badges/22dd2837ef0c911e6562/maintainability)](https://codeclimate.com/github/blackshinobi5/brain-python-games/maintainability)  
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 Набор консольных математических игр, написанных на Python.
@@ -36,9 +36,14 @@ pip install -e .
 ```bash
 python -m main
 ```
-## Демонстрация ----------------------------------------------------------------------------------------
-Игра НОК
-Игра Прогрессия
+## Демонстрация 
+Игра НОК:  
+  
+[![Demo](https://asciinema.org/a/E9A4BcxlgvmZnADiU8xZyaCGB.png)](https://asciinema.org/a/E9A4BcxlgvmZnADiU8xZyaCGB)
+
+Игра Прогрессия:
+  
+[![Demo](https://asciinema.org/a/MgfrSBbw1X6QthlUIrK5zOsRL.png)](https://asciinema.org/a/MgfrSBbw1X6QthlUIrK5zOsRL) 
 
 ## Структура проекта
 ```bash
