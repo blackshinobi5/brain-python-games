@@ -50,8 +50,8 @@ python -m main
 brain-games-python/
 ├── brain_games/
 │   ├── games/
-│   │   ├── lcm.py          # Игра "НОК"
-│   │   └── progression.py  # Игра "Прогрессия"
+│   │   ├── nom.py          # Игра "НОК"
+│   │   └── gp.py           # Игра "Прогрессия"
 │   └── engine.py           # Общая логика
 ├── main.py                 # Запуск игры
 ├── README.md               # Описание проекта
