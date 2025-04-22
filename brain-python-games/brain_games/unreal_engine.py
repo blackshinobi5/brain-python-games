@@ -1,15 +1,20 @@
-def run_game(game_module):
-    # Определяем название игры по имени модуля
-    game_name = {
-        'nom': '"Наименьшее общее кратное"',
-        'gp': '"Геометрическая прогрессия"'
-    }.get(game_module.__name__.split('.')[-1])
+def run_game(get_game_data, game_rule):
+    print("Welcome to the Brain Games!")
+    name = input("May I have your name? ")
+    print(f"Hello, {name}!")
+    print(game_rule) 
 
-    print(f"Добро пожаловать в игру {game_name}!")
-    name = input("Введите ваше имя: ")
-    print(f"Добро пожаловать, {name}!")
+    rounds = 3
+    for _ in range(rounds):
+        question, correct_answer = get_game_data()
+        print(f"Question: {question}")
+        user_answer = input("Your answer: ")
 
-    if game_module.play():
-        print(f"Поздравляю! Ты прошел игру, {name}!")
-    else:
-        print(f"Давай по новой, {name}!")
+        if user_answer == correct_answer:
+            print("Correct!")
+        else:
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {name}!")
+            return
+
+    print(f"Congratulations, {name}!")
