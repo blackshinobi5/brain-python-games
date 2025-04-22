@@ -1,16 +1,21 @@
-from brain_games.games import gp, nom
-from brain_games.unreal_engine import run_game
+from engine import run_game
+from games import GAMES
 
 
 def main():
-    print("1. НОМ\n2. Геометическая прогрессия")
-    choice = input("Выбери игрульку (1 или 2): ")
-    if choice == "1":
-        run_game(nom)
-    elif choice == "2":
-        run_game(gp)
+    print("Welcome to the Brain Games!")
+    print("Please select a game to play:")
+
+    for key, (description, _) in GAMES.items():
+        print(f"'{key}' to choose {description}")
+
+    choice = input("Your choice: ")
+
+    if choice in GAMES:
+        game_rule, get_game_data = GAMES[choice]
+        run_game(get_game_data, game_rule)
     else:
-        print("Error! Ты не выбрал игру?")
+        print("Invalid choice. Please select a valid game number.")
 
 
 if __name__ == "__main__":
